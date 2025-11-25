@@ -1,0 +1,35 @@
+{
+  "type": "python",
+  "testFiles": [
+    {
+      "path": "src/test/lab_test.py",
+      "testCases": [
+        {
+          "methodName": "test_create_list_positive",
+          "label": "Verify create_list returns a sequential list for positive input",
+          "description": "Checks that create_list(5) returns the list [1, 2, 3, 4, 5]."
+        },
+        {
+          "methodName": "test_create_list_zero",
+          "label": "Verify create_list raises ValueError for zero",
+          "description": "Ensures create_list(0) raises a ValueError with the message 'Number of elements must be positive'."
+        },
+        {
+          "methodName": "test_create_list_negative",
+          "label": "Verify create_list raises ValueError for negative input",
+          "description": "Ensures create_list(-5) raises a ValueError with the message 'Number of elements must be positive'."
+        },
+        {
+          "methodName": "test_modify_list",
+          "label": "Verify modify_list updates the list correctly",
+          "description": "Checks that modify_list appends, inserts, and removes values appropriately, transforming [1,2,3,4,5] into [0,1,2,4,5,6]."
+        },
+        {
+          "methodName": "test_slice_list",
+          "label": "Verify slice_list returns expected slices",
+          "description": "Ensures slice_list returns [1,2,3] with default parameters, and [2,3,4] when using start=1 and end=4."
+        }
+      ]
+    }
+  ]
+}
